@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realistic Burger</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .burger {
+      width: 370px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    {
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      background-color: #d3a075; /* Default color for layers */
+      border-radius: 10px;
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .bun-top {
+      height: 80px;
+      width: 370px;
+      background-color: #ffcc66;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      border: 10px solid black;
+    }
+
+    .patty {
+      top: 40px;
+      height: 30px;
+      background-color: #8b4513;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border: 10px solid black;
+    }
+
+    .lettuce {
+      top: 60px;
+      height: 20px;
+      background-color: #7cfc00;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border: 10px solid black;
+    }
+
+    .cheese {
+      top: 100px;
+      height: 10px;
+      background-color: #ffd700;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border: 10px solid black;
+    }
+
+    .tomato {
+      top: 110px;
+      height: 10px;
+      background-color: #ff6347;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border: 10px solid black;
+    }
+
+    .bun-bottom {
+      top: 120px;
+      height: 40px;
+      background-color: #ffcc66;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border: 10px solid black;
+    }
+
+    .seeds {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+  </style>
+</head>
+<body>
+
+  <div class="burger">
+    <div class="layer bun-top">
+      <div class="seeds"></div>
+    </div>
+    <div class="layer patty"></div>
+    <div class="layer lettuce"></div>
+    <div class="layer cheese"></div>
+    <div class="layer tomato"></div>
+    <div class="layer bun-bottom"></div>
+  </div>
+
+</body>
+</html>
